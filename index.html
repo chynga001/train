@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Train </title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+  #add-user {
+    background-color: aqua;
+  }
+  </style>
+   <!-- jQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Firebase Core JavaScript Link -->
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+   <!-- Specific Firebase products we want (Database) -->
+   <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" ></script>
+   <!-- Script -->
+ 
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Train</h1>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="row">Train Name</th>
+          <th scope="row">Destination</th>
+          <th scope="row">Frequency</th>
+          <th scope="row">Next Arrival</th>
+          <th scope="row">Minutes Away ($)</th>
+
+        </tr>
+      </thead>
+      <tbody id="tableCon" class="tbody">
+
+        <!-- <tr class="tr">
+          <td id="name"></td>
+          <td id="role"></td>
+          <td id="date"></td>
+          <td id="months"></td>
+          <td id="rate"></td>
+          <td id="total"></td>
+        </tr> -->
+
+
+      </tbody>
+    </table>
+
+
+
+    <br>
+    <br>
+    <div class="row">
+
+      <!-- Sign-Up Card-->
+      <div class="col-lg-12">
+        <div class="card card-default">
+          <div class="card-header">
+            New Member Sign-Up
+          </div>
+          <div class="card-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Train Name</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Destination</label>
+                <input class="form-control" id="destination-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">First train time</label>
+                <input class="form-control" id="time-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="age-input">Frequency</label>
+                <input class="form-control" id="frequency-input" type="number">
+              </div>
+             
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+ 
+
+  <script src="train.js"> </script>
+</body>
+
+</html>
